@@ -26,23 +26,34 @@
       color: rgb(41, 31, 104);
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
-    table {
+    div {
       background-color: lavender;
       padding: 20px;
       border: 1px solid lightpink;
       border-radius: 20px;
-      /* border-collapse: collapse; */
+      
+    }
+    table {      
+      border-collapse: collapse;
     }
     tr th {
       background-color: cadetblue;
-      border-radius: 50%;  
+      border-bottom: 2px solid rgb(80, 133, 134); 
     }
     thead tr th {
-      border-radius: 12px;
+      border-radius: unset;
       background-color: lightcoral;
+      padding: 10px;
+      border-bottom: unset;
     }
+
+    tbody tr:nth-child(even){
+      background-color: rgb(211, 211, 251);
+    }
+
     td {
-      border-bottom: 1px solid lightblue;
+      border-bottom: 2px solid lightblue;
+      padding: 10px;
     }
     caption {
       font-size: 24px;
@@ -54,6 +65,7 @@
   <header>
     <h1>HTML-Tabels</h1>
   </header>
+  <div>
   <table>
   <caption>Kundendaten</caption>
   <thead>
@@ -172,5 +184,6 @@
     </tr>
   </tbody>
 </table>
+</div>
 </body>
 </html>
